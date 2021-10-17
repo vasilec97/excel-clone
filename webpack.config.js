@@ -54,7 +54,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: fileName('css'),
     }),
-    new ESLintPlugin(),
+    isDev ? new ESLintPlugin() : null,
   ],
   module: {
     rules: [
