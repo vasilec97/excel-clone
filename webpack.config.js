@@ -3,7 +3,6 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HTMLWebpackPLugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ESLintPlugin = require('eslint-webpack-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = !isProd
@@ -54,7 +53,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: fileName('css'),
     }),
-    isDev ? new ESLintPlugin() : null,
   ],
   module: {
     rules: [
