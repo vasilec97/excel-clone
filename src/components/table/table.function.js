@@ -1,4 +1,5 @@
 import {range} from "@core/utils";
+import {defaultStyles} from "@/constants";
 
 export function shouldResize(e) {
   return e.target.dataset.resize

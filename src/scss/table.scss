@@ -60,6 +60,13 @@
     height: 100%;
   }
 
+  [data-type="resizable"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   .cell {
     min-width: 40px;
     padding: 5px;
